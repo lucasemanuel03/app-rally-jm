@@ -1,0 +1,92 @@
+[
+  {
+    "numero": 2,
+    "piloto": "Pasten, Gastón",
+    "pais_piloto": "ARG",
+    "navegante": "Ramos, Matías",
+    "pais_navegante": "ARG",
+    "auto": "Skoda Fabia Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 3,
+    "piloto": "Villagra, Federico",
+    "pais_piloto": "ARG",
+    "navegante": "Curletto, Diego",
+    "pais_navegante": "ARG",
+    "auto": "Hyundai i20 Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 4,
+    "piloto": "Díaz, Nicolás",
+    "pais_piloto": "ARG",
+    "navegante": "Díaz, Gonzalo",
+    "pais_navegante": "ARG",
+    "auto": "Skoda Fabia Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 5,
+    "piloto": "Zeballos, Rodrigo",
+    "pais_piloto": "URU",
+    "navegante": "González, Sebastián",
+    "pais_navegante": "URU",
+    "auto": "Citroen C3 Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 7,
+    "piloto": "Arceluz, Luis",
+    "pais_piloto": "ARG",
+    "navegante": "Queralt, Ezequiel",
+    "pais_navegante": "ARG",
+    "auto": "Citroen C3 Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 8,
+    "piloto": "Miceli, Diego",
+    "pais_piloto": "ARG",
+    "navegante": "Daparte, Sergio",
+    "pais_navegante": "ARG",
+    "auto": "Skoda Fabia Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 9,
+    "piloto": "Robustelli, Claudio",
+    "pais_piloto": "ARG",
+    "navegante": "Pissaco, Mariano",
+    "pais_navegante": "ARG",
+    "auto": "Skoda Fabia Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 11,
+    "piloto": "Cadamuro, Federico",
+    "pais_piloto": "ARG",
+    "navegante": "Mussano, Fernando",
+    "pais_navegante": "ARG",
+    "auto": "Skoda Fabia Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 12,
+    "piloto": "Baldo, Santiago",
+    "pais_piloto": "ARG",
+    "navegante": "García, Zacarías",
+    "pais_navegante": "ARG",
+    "auto": "Hyundai i20 Rally2",
+    "clase": "RC2"
+  },
+  {
+    "numero": 14,
+    "piloto": "Franco, Sebastián",
+    "pais_piloto": "BOL",
+    "navegante": "Startari, Diego",
+    "pais_navegante": "BOL",
+    "auto": "Citroen C3 Rally2",
+    "clase": "RC2"
+  }
+]
