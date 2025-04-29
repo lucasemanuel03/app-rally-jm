@@ -4,8 +4,8 @@
   --background: #ffffff;
   --foreground: #06182D;
   --dark-blue: #06182D;
-  --principal: #0068B3;
-  --yellow: #FCBD18;
+  --principal: #0167b2;
+  --yellow: #f3bd1c;
 
   
 }
@@ -41,10 +41,10 @@ h1{
   }
 
   .section-title{
-    @apply text-(--yellow) font-extrabold text-3xl p-5
+    @apply text-(--yellow) font-extrabold text-2xl m-4
   }
   .bg-principal{
-    @apply bg-gradient-to-tl from-slate-700 to-sky-700;
+    @apply bg-gradient-to-tl from-[#003963] to-[#0066b0];
   }
   .scale-animation{
     @apply transition-all duration-300 hover:scale-105

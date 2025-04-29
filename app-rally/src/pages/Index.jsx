@@ -1,10 +1,25 @@
 import CarruselGanadores from "../components/CarruselGanadores";
+import ContainerCard from "../components/ContainerCard";
 import CuentaRegresiva from "../components/CuentaRegresiva";
-import GanadoresCard from "../components/GanadoresCard";
 import ItinerarioCard from "../components/ItinerarioCard";
 import NoticiasCard from "../components/NoticiasCard";
+import YoutubeVideo from "../components/YotubeVideo";
+import noticias from "../data/noticias";
+import tramos from "../data/tamos";
 
 function Index(){
+
+    let tramosList = [];
+    tramos.forEach((tramo) => {
+        tramosList.push(<ItinerarioCard tituloTramo={tramo.titulo} date={tramo.date} cantKm={tramo.cantKm} urlImage={tramo.urlImage} hora={tramo.hora}/>)
+    })
+    tramosList.push(<ItinerarioCard tituloTramo="VER TODOS" date="" hora="" urlImage='/images/ItinerarioImages/sta-catalina2.jpeg'/>)
+    let noticiasList = [];
+    noticias.forEach((noticia) => {
+        noticiasList.push(<NoticiasCard titulo={noticia.titulo} subtitulo={noticia.subtitulo} urlImage={noticia.urlImagen}/>)
+        
+    })
+    
     return(
         
         <div className=" grid justify-items-center">
@@ -34,35 +49,42 @@ function Index(){
                 <img src="/images/Banner_950x150_1-21.gif"></img>
             </section>
 
-            <section className="m-10">
-                <h2 className="section-title">ÚLTIMOS GANADORES</h2>
-                <CarruselGanadores/>
+            <section className="grid grid-cols-1 sm:grid-cols-2 justify-center">
+                <section>
+                    <ContainerCard Componente={<CarruselGanadores/>} titulo="ÚLTIMOS GANADORES"/>
+                </section>
+
+                <section>
+                    <ContainerCard Componente={<CuentaRegresiva/>} titulo="CUENTA REGRESIVA"/>
+                </section>
+
             </section>
 
-            <section className="mt-5">
-                <h2 className="section-title">CUENTA REGRESIVA</h2>
-                <CuentaRegresiva />
+            <section>
+                <ContainerCard 
+                    Componente={tramosList}
+                    titulo="ITINERARIO"
+                    estilos="grid sm:grid-cols-2 sm:grid-rows-2 gap-5 grid-cols-1 p-5"
+                    />
             </section>
 
-            <section className="flex flex-col items-center mt-5">
-                <h2 className="section-title">ITINERARIO</h2>
-                <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-5 grid-cols-1">
-                <ItinerarioCard tituloTramo="SSS1 SUPER ESPECIAL JESÚS MARÍA" date="Viernes 11" hora="19:30" cantKm={1.32} urlImage='/images/ItinerarioImages/super-jm.jpg'/>
-                <ItinerarioCard tituloTramo="LAS MARGARITAS" date="Viernes 11" hora="11:00" cantKm={5.18}/>
-                <ItinerarioCard tituloTramo="SS2 STA. CATALINA - LA PAMPA(I)" date="Sábado 12" hora="08:28" cantKm={9.68} urlImage='/images/ItinerarioImages/sta-catalina2.jpeg'/>
-                <ItinerarioCard tituloTramo="VER TODOS" date="" hora="" urlImage='/images/ItinerarioImages/sta-catalina2.jpeg'/>
-                </div>
-           </section>
-
-           <section className="mt-5 flex flex-col items-center">
-                <h2 className="section-title">ÚLTIMAS NOTICIAS</h2>
-                <div className="flex flex-col gap-5">
-                    <NoticiasCard titulo="Eduardo Baca: “Es emocionante ver este escenario”"
-                                urlImage="/images/noticiasImage/noticia2.png" 
-                                subtitulo="En un marco espectacular, el predio del Festival de la Doma y el Folklore se transformó en un escenario mágico que dio el puntapié inicial a una competencia inolvidable del Campeonato."/>   
-                    <NoticiasCard titulo="¡Que comience la acción!" subtitulo="Tras las verificaciones administrativas y técnicas, los equipos comenzaron este jueves el reconocimiento de los tramos."/>
-                </div>
+            <section>
+                <ContainerCard 
+                    Componente={<YoutubeVideo/>}
+                    titulo="¡ASÍ SE VIVE EL RALLY!"
+                    />
             </section>
+
+            <section>
+                <ContainerCard 
+                    Componente={noticiasList}
+                    titulo="ÚLTIMAS NOTICIAS"
+                    estilos="flex flex-col gap-5 p-5"
+                    />
+            </section>
+
+            
+            
         </div>
     )
 }
