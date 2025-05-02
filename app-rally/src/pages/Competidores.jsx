@@ -6,14 +6,15 @@ import ContainerCard from '../components/ContainerCard'
 
 function Competidores(){
     return(  
-    <div>
-        <div className='flex flex-col justify-items-center'>
-            <h1>LISTADO DE COMPETIDORES</h1>
+    <div className='flex flex-col justify-center items-center'>
+        <div className='p-10'>
+            <h1>LISTADO DE COMPETIDORES OFICIAL</h1>
             <p>Rally Sudamericano Jesús María Edición 2025</p>
         </div>
             <ContainerCard 
                 titulo='LISTADO DE COMPETIDORES'
-            
+                estilos='p-5'
+                tipo='big'
                 Componente={<TablaCompetidores competidores={json_competidores}/>}/>
         <div>
          

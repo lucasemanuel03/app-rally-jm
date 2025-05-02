@@ -9,6 +9,10 @@ function ContainerCard({Componente=[], titulo="Default", estilos="p-5", tipo="de
         case "fit":
             estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-fit max-w-2xl shadow-2xl"
             break;
+
+        case "big":
+            estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-full max-w-4xl shadow-2xl"
+            break;
         default:
             estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-svw max-w-2xl shadow-2xl"
     }
