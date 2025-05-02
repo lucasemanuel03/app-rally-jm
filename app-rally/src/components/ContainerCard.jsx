@@ -1,12 +1,24 @@
 
-function ContainerCard({Componente=[], titulo="Default", estilos="p-5"}){
+function ContainerCard({Componente=[], titulo="Default", estilos="p-5", tipo="default"}){
+    let estiloPrincipal;
+
+    switch(tipo){
+        case "default":
+            estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-svw max-w-2xl shadow-2xl"
+            break;
+        case "fit":
+            estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-fit max-w-2xl shadow-2xl"
+            break;
+        default:
+            estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-svw max-w-2xl shadow-2xl"
+    }
 
 
 return(
 
-    <div className="bg-(--dark-blue) rounded-xl mt-5 flex flex-col shadow-2xl">
+    <div className= {estiloPrincipal}>
         <div
-        className=" rounded-br-4xl bg-principal w-fit flex p-0">
+        className=" rounded-br-xl bg-principal w-fit flex">
             <h2 className="section-title">{titulo}</h2>
         </div>
         
@@ -17,5 +29,6 @@ return(
     </div>
 )
 }
+
 
 export default ContainerCard;

@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "@midudev/tailwind-animations";
 :root {
   --background: #ffffff;
   --foreground: #06182D;
@@ -15,17 +15,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-kdam: var(--font-kdam) 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #151525;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(to left, #0b2748, #010c15);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -41,7 +42,7 @@ h1{
   }
 
   .section-title{
-    @apply text-(--yellow) font-extrabold text-2xl m-4
+    @apply text-(--yellow) font-extrabold text-xl m-3
   }
   .bg-principal{
     @apply bg-gradient-to-tl from-[#003963] to-[#0066b0];

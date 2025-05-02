@@ -1,7 +1,7 @@
 function ItinerarioCard({ tituloTramo = "Default", date = "Miércoles 15", hora = "16:00", cantKm = 9.9, urlImage='/images/ItinerarioImages/Shakedown.jpeg' }) {
     return (
       <div
-        className="relative scale-animation hover:text-amber-300 hover:brightness-150 flex flex-col justify-end bg-cover bg-center rounded-2xl shadow-md overflow-hidden size-75"
+        className="relative cursor-pointer scale-animation hover:text-amber-300 hover:brightness-150 flex flex-col justify-end bg-cover bg-center rounded-2xl shadow-md overflow-hidden  min-w-70 mix-h-70"
         style={{
           backgroundImage: `url(${urlImage})`,
         }}

@@ -1,6 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import localFont from 'next/font/local';
+const kdamFont = localFont({
+  variable: "--font-kdam",
+  subsets: ["latin"],
+  src: '../../fonts/KdamThmorPro-Regular.ttf'})
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${kdamFont.variable} antialiased`}
       >
         {children}
       </body>

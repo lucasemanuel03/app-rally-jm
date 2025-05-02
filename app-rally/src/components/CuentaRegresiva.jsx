@@ -1,6 +1,6 @@
 function CuentaRegresiva(){
     return(
-        <div className=" scale-animation bg-gradient-to-tl from-slate-700 to-sky-700 rounded-4xl h-40 p-5 grid justify-items-center">
+        <div className=" scale-animation bg-gradient-to-tl from-slate-700 to-sky-700 rounded-4xl p-5 grid justify-items-center">
             <h2>EL RALLY COMIENZA EN</h2>
             <br/>
             <div className="grid grid-cols-4 grid-rows-2 gap-1">

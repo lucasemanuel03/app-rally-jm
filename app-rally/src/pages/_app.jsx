@@ -6,7 +6,7 @@ const kdamFont = localFont({src: '../../fonts/KdamThmorPro-Regular.ttf'})
 
 function AppRally({Component, pageProps}){
     return(
-        <div className={`${kdamFont.className}`}>
+        <div className={` ${kdamFont.className}`}>
             <Header/>
             <Component {...pageProps}/>
             <Footer/>

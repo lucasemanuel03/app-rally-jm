@@ -22,12 +22,12 @@ function Index(){
     
     return(
         
-        <div className=" grid justify-items-center">
+        <div className=" flex flex-col">
             {/* ES GRID PARA QUE FUNCIONE ES Firefox, ya que no considera justify si es flex */}
 
             <section className="relative">
                 <img 
-                    className="object-cover"
+                    className="object-cover w-screen max-h-99"
                     alt="Fondo"
                     src="/images/portada-rally.jpg">
                 </img>
@@ -35,7 +35,7 @@ function Index(){
                     className="absolute h- inset-0 bg-gradient-to-r from-(--principal)/70 via-(--yellow)/40 to-transparent">
                 </div>
                 <div className="flex items-center absolute inset-0">
-                    <div className=" flex-col justify-items-center ml-7 text-shadow-xs/50">
+                    <div className=" flex-col justify-items-center  text-shadow-xs/50">
                         <h1 className="mb-5 text-2xl sm:text-5xl">VIVÍ EL RALLY A FONDO</h1>
                         <h3 className="text-(--yellow) text-xl">Rally Sudamericano Jesús María</h3>
                         <h3 className="text-xl">Del 11 al 13 de Abril 2025</h3>
@@ -43,24 +43,26 @@ function Index(){
                 </div>
             </section>
 
+
+            <div className="flex flex-col justify-center items-center">
+
             <br/>
             <h2 className="section-title">AUSPICIANTES</h2>
             <section className="m-10 bg-amber-50">
                 <img src="/images/Banner_950x150_1-21.gif"></img>
             </section>
 
-            <section className="grid grid-cols-1 sm:grid-cols-2 justify-center">
+            <section className=" mt-10 grid grid-cols-1 sm:grid-cols-2 gap-2  justify-center">
                 <section>
-                    <ContainerCard Componente={<CarruselGanadores/>} titulo="ÚLTIMOS GANADORES"/>
+                    <ContainerCard Componente={<CarruselGanadores/>} titulo="ÚLTIMOS GANADORES" tipo="fit"/>
                 </section>
 
                 <section>
                     <ContainerCard Componente={<CuentaRegresiva/>} titulo="CUENTA REGRESIVA"/>
                 </section>
-
             </section>
-
-            <section>
+       
+            <section className="mt-10">
                 <ContainerCard 
                     Componente={tramosList}
                     titulo="ITINERARIO"
@@ -68,14 +70,14 @@ function Index(){
                     />
             </section>
 
-            <section>
+            <section className="mt-10">
                 <ContainerCard 
                     Componente={<YoutubeVideo/>}
                     titulo="¡ASÍ SE VIVE EL RALLY!"
                     />
             </section>
 
-            <section>
+            <section className="mt-10">
                 <ContainerCard 
                     Componente={noticiasList}
                     titulo="ÚLTIMAS NOTICIAS"
@@ -83,8 +85,7 @@ function Index(){
                     />
             </section>
 
-            
-            
+            </div>
         </div>
     )
 }

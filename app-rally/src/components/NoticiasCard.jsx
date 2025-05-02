@@ -1,14 +1,13 @@
 function NoticiasCard({titulo="TITULO", subtitulo="Subtitulo de la noticia.", urlImage="/images/noticiasImage/noticia1.jpeg"}){
     return(
-        <div className="rounded-2xl scale-animation bg-amber-50 max-w-sm sm:max-w-xl max-h-90 overflow-hidden ">
-            <section className="bg-red-400 h-50 w-full">
+        <div className="relative rounded-xl bg-gray-800 max-w-sm sm:max-w-xl max-h-96 overflow-hidden group shadow-md">
+            <section className="bg-red-400 h-40 w-full">
                 <img className="w-full h-full object-cover" src={urlImage}></img>
             </section>
-            <section className="bg-black/70 p-5 ">
-                <h2 className="text-xl font-bold mb-2">{titulo}</h2>
-                <p className=" text-sm font-extralight truncate hover:text-ellipsis" >{subtitulo}</p>
+            <section className="relative bg-gray-800  p-5 h-35 transform translate-y-0 group-hover:-translate-y-10 transition-transform duration-300">          
+                <h2 className="relative text-2xl font-bold mb-2 font-serif ">{titulo}</h2>
+                <p className="relative text-sm font-normal text-gray-300 text-ellipsis">{subtitulo}</p>
             </section>
-
         </div>
     )
 }
