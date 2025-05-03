@@ -50,4 +50,11 @@ h1{
   .scale-animation{
     @apply transition-all duration-300 hover:scale-105
   }
+
+  .btn-primary{
+    @apply bg-(--principal) text-white py-2 px-4 rounded-4xl hover:bg-(--yellow) hover:text-gray-800 active:brightness-50 transition-colors duration-300 shadow-md shadow-black/30;
+  }
+  .btn-secondary{
+    @apply bg-transparent border-2 border-white text-white py-2 px-4 rounded-4xl hover:bg-gray-800 hover:text-white transition-colors shadow-md shadow-black/30 duration-300;
+  }
 }
