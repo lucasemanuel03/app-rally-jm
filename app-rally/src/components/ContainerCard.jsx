@@ -4,7 +4,7 @@ function ContainerCard({Componente=[], titulo="Default", estilos="p-5", tipo="de
 
     switch(tipo){
         case "default":
-            estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-svw max-w-2xl shadow-2xl"
+            estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-svw sm:max-w-2xl xl:max-w-5xl shadow-2xl"
             break;
         case "fit":
             estiloPrincipal ="bg-gray-900 rounded-xl flex flex-col w-fit max-w-2xl shadow-2xl"

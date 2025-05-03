@@ -1,17 +1,16 @@
 function CuentaRegresiva(){
     return(
-        <div className=" scale-animation bg-gradient-to-tl from-slate-700 to-sky-700 rounded-4xl p-5 grid justify-items-center">
-            <h2>EL RALLY COMIENZA EN</h2>
-            <br/>
-            <div className="grid grid-cols-4 grid-rows-2 gap-1">
-                <h1 className="text-(--yellow) text-3xl">10</h1>
-                <h1 className="text-(--yellow) text-3xl">20 : </h1>
-                <h1 className="text-(--yellow) text-3xl">33 : </h1>
-                <h1 className="text-(--yellow) text-3xl">45</h1>
-                <h3>DIAS</h3>
-                <h3>HS</h3>
-                <h3>MIN.</h3>
-                <h3>SEG.</h3>
+        <div className="grid scale-animation bg-gradient-to-tl from-slate-700 to-sky-700 rounded-4xl p-1  sm:gap-2  justify-items-center">
+            <h2 className="p-3">EL RALLY COMIENZA EN</h2>
+            <div className="grid grid-cols-4 grid-rows-2 gap-2 justify-items-center">
+                <h1 className="text-(--yellow) text-4xl">100 </h1>
+                <h1 className="text-(--yellow) text-4xl"> 20</h1>
+                <h1 className="text-(--yellow) text-4xl">: 33</h1>
+                <h1 className="text-(--yellow) text-4xl">: 45</h1>
+                <h3 className="text-gray-400">DIAS</h3>
+                <h3 className="text-gray-400">HORAS</h3>
+                <h3 className="text-gray-400">MIN.</h3>
+                <h3 className="text-gray-400">SEG.</h3>
             </div>
         </div>
     )

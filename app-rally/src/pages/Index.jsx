@@ -7,6 +7,7 @@ import tramos from '../data/tamos';
 import noticias from '../data/noticias';
 import CuentaRegresiva from '../components/CuentaRegresiva';
 import CarruselGanadores from '../components/CarruselGanadores';
+import Sponsors from '../components/Sponsors';
 
 
 function Index() {
@@ -44,19 +45,17 @@ function Index() {
             </div>
         </div>
         </section>
-      <div className='mt-20 animate-fade-in-down animate-delay-1000'>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap justify-items-center items-center justify-center max-w-3xl mx-auto gap-2 ">
-          
-          <section className=''>
-            <ContainerCard Componente={<CarruselGanadores/>} titulo="ÚLTIMOS GANADORES" tipo="fit"/>
-          </section>
+      <div className='mt-5 animate-fade-in-down animate-delay-1000'>
+        <div className='flex flex-col justify-center items-center'>  
 
           <section className=''>
-              <ContainerCard Componente={<CuentaRegresiva/>} titulo="CUENTA REGRESIVA" tipo='fit'/>
+              <ContainerCard Componente={<CuentaRegresiva/>} titulo="CUENTA REGRESIVA" tipo='default'/>
           </section>
-        </div>
-        
-        <div className='flex flex-col justify-center items-center'>     
+
+          <section className='mt-20'>
+            <Sponsors/>
+          </section>
+
           <section className='mt-20'>
             <ContainerCard Componente={<YoutubeVideo/>}
                           titulo='ASÍ SE VIVE EL RALLY'/>
@@ -69,6 +68,11 @@ function Index() {
           <section className='mt-20'>
             <ContainerCard titulo='ÚLTIMAS NOVEDADES' Componente={noticiasList} estilos='grid justify-items-center gap-5 p-5'/>
           </section>
+
+          <section className=''>
+            <ContainerCard Componente={<CarruselGanadores/>} titulo="ÚLTIMOS GANADORES" tipo="fit"/>
+          </section>
+
         </div>
 
       </div>
