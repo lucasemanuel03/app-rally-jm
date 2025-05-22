@@ -29,7 +29,7 @@ function Index() {
     <div>
       <section className="relative animate-fade-in-down animate-delay-100">
         <img 
-            className="object-cover w-screen max-h-170 h-100 sm:h-110 md:h-120 xl:h-130 mask-radial-at-center mask-radial-from-45% mask-radial-to-80%"
+            className="object-cover w-screen max-h-170 h-100 sm:h-110 md:h-120 xl:h-150 mask-radial-at-center mask-radial-from-45% mask-radial-to-80%"
             alt="Fondo"
             src="/images/portada-rally.jpg">
         </img>
@@ -51,8 +51,8 @@ function Index() {
       <div className='-mt-5 sm:-mt-20  animate-fade-in-down animate-delay-1000'>
         <div className='flex flex-col justify-center items-center'>  
 
-          <section className=''>
-              <ContainerCard Componente={<CuentaRegresiva/>} titulo="CUENTA REGRESIVA" tipo='default'/>
+          <section className='w-screen'> 
+              <CuentaRegresiva/>
           </section>
 
           <section className='mt-20'>

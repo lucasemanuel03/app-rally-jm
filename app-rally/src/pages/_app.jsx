@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 const kdamFont = localFont({src: '../../fonts/KdamThmorPro-Regular.ttf'})
 
 function AppRally({Component, pageProps}){
+
     return(
         <div className={` ${kdamFont.className}`}>
             <Header/>
