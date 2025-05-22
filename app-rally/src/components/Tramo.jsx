@@ -13,7 +13,6 @@ function Tramo({hora="10:00", tipo="S1", nombreTramo="LAS PEÑAS - AVELLANEDA (I
                     </div>
 
                 </div>
-
                
                 <div>
                     <h1>{nombreTramo}</h1>
@@ -22,6 +21,7 @@ function Tramo({hora="10:00", tipo="S1", nombreTramo="LAS PEÑAS - AVELLANEDA (I
                     <h1>{distancia} Km</h1>
                 </div>
             </div>
+            
         </div>
     )
 }

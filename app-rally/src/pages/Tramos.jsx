@@ -27,7 +27,7 @@ function Tramos() {
 
 
     return (
-    <div className='flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center '>
         <div className='relative  flex flex-col justify-center items-center'>
             <img 
                 className="object-cover w-screen max-h-170 h-80 sm:h-100 md:h-120 xl:h-130 mask-radial-at-center mask-radial-from-45% mask-radial-to-80%"
@@ -57,6 +57,20 @@ function Tramos() {
             <ContainerCard Componente={listaTramo3} titulo='DOMINGO 13' tipo='default' estilos='flex flex-col gap-5'/>
         </div>
 
+      </div>
+
+      <div className='m-25'>
+        <ContainerCard Componente={            
+            <section >
+                
+                <div className='flex flex-row  items-center'>
+                    <h1 className='text-(--yellow) text-xl'>Itinerario y mapa de la carrera</h1>
+                    <a className='btn-secondary ml-3'
+                        href="https://rallyargentina.com/wp-content/uploads/2025/04/00-Cronograma-Jesus-Mar%C3%ADa-2025-v1.pdf" target="_blank" rel="noopener noreferrer">Descargar</a>
+                </div>
+            </section>
+        } 
+        titulo='RECURSOS DESCARGABLES'/>
       </div>
     </div>
   );
