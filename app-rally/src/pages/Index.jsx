@@ -51,7 +51,7 @@ function Index() {
       <div className='-mt-5 sm:-mt-20  animate-fade-in-down animate-delay-1000'>
         <div className='flex flex-col justify-center items-center'>  
 
-          <section className='w-screen'> 
+          <section className='sm:w-150 w-full '> 
               <CuentaRegresiva/>
           </section>
 
